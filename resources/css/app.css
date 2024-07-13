@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.loginForm {
+    width: 30vw;
+    margin: 100px auto;
+}
+.table-wrap {
+    width: 50%;
+    overflow-x: auto;
+}
+.modal {
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; /* 15% from the top and centered */
+    padding: 20px;
+    /* border: 1px solid #888; */
+    width: 50%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #f3f3f3;
+}
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.auto-hide {
+    display: none;
+}
+.header-modal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    border-bottom: 1px solid #f0f0f0;
+}
+@media only screen and (max-width: 760px) {
+    .loginForm {
+        width: 90vw;
+    }
+    .table-wrap {
+        width: 95%;
+        overflow-x: auto;
+    }
+    .modal-content {
+        width: 90%;
+    }
+}
+.body-cetak {
+    padding: 5px;
+}
+.header-cetak {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #aaa;
+    padding-bottom: 5px;
+    align-items: center;
+}
+.data {
+    width: 80vw;
+    margin: 10px auto;
+}
+.item {
+    display: flex;
+    gap: 3px;
+    padding: 3px 0;
+}
